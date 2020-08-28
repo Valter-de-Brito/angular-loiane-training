@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-loiane-training"
+    }
+  },
+  "defaultProject": "angular-loiane-training",
+  "cli": {
+    "analytics": false
+  }
 }
