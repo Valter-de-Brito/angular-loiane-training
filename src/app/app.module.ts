@@ -9,7 +9,12 @@ import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
-  declarations: [AppComponent, MeuPrimeiroComponent, MeuPrimeiro2Component, DataBindingComponent],
+  declarations: [
+    AppComponent,
+    MeuPrimeiroComponent,
+    MeuPrimeiro2Component,
+    DataBindingComponent,
+  ],
   imports: [BrowserModule, CursosModule],
   providers: [],
   bootstrap: [AppComponent],
