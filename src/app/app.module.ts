@@ -10,6 +10,7 @@ import { CursosModule } from './cursos/cursos.module';
 import { MeuFormModule } from './meu-form/meu-form.module';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     DataBindingComponent,
     InputPropertyComponent,
     OutputPropertyComponent,
+    CicloComponent,
   ],
   imports: [BrowserModule, CursosModule, MeuFormModule],
   providers: [],
