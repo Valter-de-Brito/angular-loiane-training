@@ -1,0 +1,11 @@
+<div>
+  <a href="#" [class.active]="aba == 'home'" (click)="aba = 'home'">Home</a>
+  <a href="#" [class.active]="aba == 'mapa'" (click)="aba = 'mapa'">Mapa</a>
+  <a href="#" [class.active]="aba == 'lista'" (click)="aba = 'lista'">Lista</a>
+</div>
+
+<div class="container" [ngSwitch]="aba">
+  <p *ngSwitchCase="'mapa'">Modo mapa ativado</p>
+  <p *ngSwitchCase="'lista'">Modo lista ativado</p>
+  <p *ngSwitchDefault>Home</p>
+</div>
