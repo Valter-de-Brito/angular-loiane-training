@@ -1,4 +1,4 @@
-<h5>*ngIf</h5>
+<h2>*ngIf</h2>
 
 <div *ngIf="cursos.length > 0">Lista de cursos aqui.</div>
 <div *ngIf="cursos.length == 0">Não tem cursos para serem listados.</div>
@@ -15,3 +15,13 @@
 <div [hidden]="mostrarCursos">
   Não tem cursos para serem listados - boolean.
 </div>
+
+<br /><br />
+
+<h2>Removendo * e usando o template</h2>
+
+<div *ngIf="mostrarCursos"></div>
+
+<ng-template [ngIf]="mostrarCursos">
+  <div>Lista de cursos aqui!</div>
+</ng-template>
