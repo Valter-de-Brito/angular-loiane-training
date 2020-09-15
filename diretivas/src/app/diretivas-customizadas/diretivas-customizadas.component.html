@@ -1,3 +1,21 @@
 <p fundoAmarelo>Fundo amarelo da Diretivas Customizadas</p>
 
 <button fundoAmarelo>Botão fundo amarelo</button>
+
+<br />
+
+<p highlightMouse>Texto com highlight quando passo o mouse</p>
+
+<p [highlight]="'orange'" [defaultColor]="'grey'">
+  Texto com highlight com cores customizadas
+</p>
+
+<h3>-------------------</h3>
+<div *ngIf="mostrarCursos">Lista de cursos aqui - boolean.</div>
+<div *ngElse="mostrarCursos">Não tem cursos para serem listados - boolean.</div>
+
+<br />
+
+<button class="btn btn-primary" (click)="onMostarCursos()">
+  Mostrar ou esconder cursos
+</button>
