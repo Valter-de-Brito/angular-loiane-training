@@ -11,8 +11,23 @@
 
 <br />
 
+<input type="text" [(ngModel)]="filtro" />
+<br />
+<input type="text" #novoValor />
+<button (click)="addCursos(novoValor.value)">Add Cursos</button>
+
 <ul>
   <li *ngFor="let liv of livros | filtroArray">
     {{ liv }}
   </li>
 </ul>
+
+<h4>Maneira correta de usar filtro nos projetos</h4>
+<ul>
+  <li *ngFor="let liv of obterCursos()">
+    {{ liv }}
+  </li>
+</ul>
+
+<p>{{ valorAsync | async }}</p>
+<p>{{ valorAsync2 | async }}</p>
